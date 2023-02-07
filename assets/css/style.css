@@ -144,4 +144,8 @@ Responsive
     margin: 0 auto;
   }
 
+  .footer {
+    padding-bottom: 10rem;
+  }
+
 }
