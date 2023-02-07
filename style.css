@@ -1,0 +1,151 @@
+.center {
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 101.12rem;
+}
+
+.header {
+  display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+  color: var(--color-1);
+  font-family: var(--font-family-1);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 118%;
+}
+
+.menu__list {
+  display: flex;
+    gap: 4.8rem;
+}
+
+.menu__link {
+  color: var(--color-2);
+  font-family: var(--font-family-2);
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-decoration: none;
+}
+
+.menu__link--active {
+  color: var(--color-2-hover);
+  font-weight: 700;
+}
+
+@media (hover: hover) {
+
+  .menu__link:hover {
+    color: var(--color-2-hover);
+    font-weight: 700;
+  }
+
+}
+
+.main {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding: 5.8rem 0 8.2rem;
+}
+
+.main__content {
+  max-width: 48.9rem;
+}
+
+.main__title {
+  color: var(--color-3);
+  font-family: var(--font-family-2);
+  font-size: 4.9rem;
+  line-height: 114%;
+}
+
+.main__title--span {
+  color: var(--color-1);
+  font-weight: 700;
+}
+
+.main__text {
+  color: var(--color-4);
+  font-family: var(--font-family-3);
+  font-size: 1.4rem;
+  line-height: 200%;
+  margin: 4rem 0;
+}
+
+.main__button {
+  background-color: var(--color-5);
+  border: none;
+  border-radius: .4rem;
+  color: var(--color-6);
+  cursor: pointer;
+  display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  font-family: var(--font-family-4);
+  font-size: inherit;
+  line-height: 2.1rem;
+  padding: 1.6rem 3.2rem;
+}
+
+@media (hover: hover) {
+
+  .main__button:hover {
+    background-color: var(--color-5-hover);
+  }
+
+}
+
+.footer__text {
+  color: var(--color-3);
+  font-family: var(--font-family-3);
+  line-height: 200%;
+  text-align: center;
+}
+
+.footer__link {
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 
+
+Responsive 
+
+*/
+
+@media screen and (max-width: 861px) {
+
+  br {
+    display: none;
+  }
+
+  .center {
+    width: auto;
+  }
+
+  .header {
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5.8rem;
+  }
+
+  .main {
+    flex-direction: column;
+    row-gap: 10.2rem;
+    text-align: center;
+  }
+
+  .main__button {
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding-bottom: 10rem;
+  }
+
+}
